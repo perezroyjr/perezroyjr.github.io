@@ -1,0 +1,187 @@
+<html>
+	<head>
+		<title>Roy Perez</title>
+		<link rel="icon" href="assets/favicon.png" />
+		
+		<!-- Required meta tags -->
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="styles/bootstrap.min.css">
+		<link rel="stylesheet" href="styles/bootstrap-icons.css">
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="styles/stylesheet.css">
+
+	</head>
+	<body class="background-color text-light">
+		<!-- Navbar -->
+			<nav class="navbar navbar-expand-md navbar-light bg-light container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<i class="bi bi-house"></i> Roy Perez
+				</a>
+				<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-options">
+					<i class="navbar-toggler-icon"></i>
+				</button>
+				<div class="collapse navbar-collapse" id="navbar-options">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="projects.html">
+							<i class="bi bi-code-slash"></i> Projects
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="blog.html">
+							<i class="bi bi-chat-dots"></i> Blog
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">
+							<i class="bi bi-person"></i> About
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">
+							<i class="bi bi-envelope"></i> Contact
+						</a>
+					</li>
+				</ul>
+			</div>
+			</nav>
+		
+		<!-- Coding Projects Portfolio-->
+		<div class="container text-center">
+			<h3 class="display-4 mt-4 shadow-lg">Projects</h3>
+			<hr>
+
+		<!-- Projects NavBar -->
+		<div class="container">
+  			<nav class="bg-black navbar navbar-expand-sm navbar-light text-light justify-content-center">
+   				 <div class="justify-content-center">
+      				<a class="navbar-brand mb-2 h1 text-light" href="#chess">Chess AI Agent</a>
+      				<a class="navbar-brand mb-2 h1 text-light" href="#aws">AWS Lambda</a>
+      				<a class="navbar-brand mb-2 h1 text-light" href="#fork">Process Forks</a>
+      				<a class="navbar-brand mb-2 h1 text-light" href="#fork">Constraint Satisfiability Agent</a>
+
+   				 </div>
+  				</nav>
+		</div>
+
+			
+			<!-- START: Card Group -->
+			
+			<div class="card-group gap-2">
+				<!-- START: Card 1 -->
+			<div class="row">
+				<div class="col">
+				<div class="card text-center background-color mt-5">
+					<!-- Card Header -->
+					<a id="chess">
+					<div class="card-header">
+						<img class="img-thumbnail img-fluid mx-auto card-img" src="assets/chess.jpg">
+					</div>
+					</a>
+					<!-- Card Body -->
+					<div class="card-body">
+					
+						<h3 class="card-title"> Chess Bot </h3>
+						<p class="card-text">
+							For this project I implemented a Chess agent using the Minimax algorithm
+							with alpha-beta pruning. The chess agent was able to choose its next move based on a utility function. The utility function returned the highest score based on the states it searched, and that state was chosen as the agent's next move.  
+						</p>
+						
+					</div>
+					<!-- Card Footer -->
+					<div class="card-footer">
+						<small class="text-muted"> Java </small><br>
+						<button class="btn btn-dark mt-3 text-center"> See More </button>
+						</div>
+					</div>
+					</div>
+					<!-- End:Card 1 -->
+					
+					<!--START:Card 2 -->
+					<div class="col">
+					<div class="card background-color text-center mt-5">
+					<!-- Card Header -->
+					<a id="aws">
+					<div class="card-header">
+						<img class="img-thumbnail img-fluid mx-auto card-img" src="assets/aws.png">
+					</div>
+					</a>
+					<!-- Card Body -->
+					<div class="card-body">
+						<h3 class="card-title"> AWS Lambda Execution Times </h3>
+						<p class="card-text">
+							In this project I was given the task of tracking the time it takes AWS Lambda to execute code based on whether it was a cold or warm start. 
+						</p>
+					</div>
+					<!-- Card Footer -->
+					<div class="card-footer">
+						<small class="text-muted"> Python, Jupyter Notebook</small><br>
+						<button class="btn btn-dark mt-3"> See More </button>
+					</div>
+					<!--END:Card 2 -->
+				</div>
+				</div>
+			</div>
+
+				<!--START:Card 3 -->
+				<div class="row mb-5">
+					<div class="col">
+					<div class="card background-color text-center mt-5 mx-5">
+					<!-- Card Header -->
+					<a id="fork">
+					<div class="card-header">
+						<img class="img-thumbnail card-img" src="assets/fork-hi.png">
+					</div>
+					</a>
+					<!-- Card Body -->
+					<div class="card-body">
+						<h3 class="card-title"> Process Forks </h3>
+						<p class="card-text">
+							In this project we were given the task of understanding how our Operating System works when creating a new process. To demonstrate this I created a C program that used it's fork function to create new child processes, and display who their parent node is. The data was then output to a txt file from the program and then parsed into a Python program to create a tree visualization.  
+						</p>
+					</div>
+					<!-- Card Footer -->
+					<div class="card-footer">
+						<small class="text-muted"> C, Python </small><br>
+						<button class="btn btn-dark mt-3"> See More </button>
+					</div>
+					</div>
+					</div>
+					<!--END:Card 3 -->
+					
+				
+				<!--START:Card 4 -->
+
+				<div class="col">
+					<div class="card background-color text-center mt-5 mx-5">
+					<!-- Card Header -->
+					<a id="CSP">
+					<div class="card-header">
+						<img class="img-thumbnail card-img" src="assets/constraint.png">
+					</div>
+					</a>
+					<!-- Card Body -->
+					<div class="card-body">
+						<h3 class="card-title"> Constraint Satisfiability Agent (In Progress)</h3>
+						<p class="card-text">
+							For this project we were given a program with the choice of implementing a CSP algorithm of our choosing. This project I implemented the brute force portion of the DPLL algorithm. I plan on finishing this later once the semester ends. 
+						</p>
+					</div>
+					<!-- Card Footer -->
+					<div class="card-footer">
+						<small class="text-muted"> Java </small><br>
+						<button class="btn btn-dark mt-3"> See More </button>
+					</div>
+					<!--END:Card 3 -->
+					</div>
+				</div>
+				<!--END:Card Group -->
+			</div>
+			<!-- Bootstrap Bundle with Popper -->
+			<script src="scripts/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

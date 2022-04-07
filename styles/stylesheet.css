@@ -1,0 +1,78 @@
+
+.background-color{
+	background-color: black;
+}
+
+#text {
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+}
+
+
+.fade-in {
+	animation: fadeIn 25s;
+
+}
+
+@keyframes fadeIn{
+	from{
+		opacity:  0;
+	}
+
+	to{
+		opacity:  1;
+	}
+}
+
+.fade-out {
+	animation: fadeIn 25s;
+
+}
+
+@keyframes fadeOut{
+	from{
+		opacity:  1;
+	}
+
+	to{
+		opacity:  0;
+	}
+}
+
+.card-img{
+ 	 
+ 	 max-width: 50%;
+  	 height: auto;
+  	 width: 500px;
+  	 height: 300px;
+  	 background-color: transparent;
+  	 border: none;
+}
+
+.about-img{
+ 	 
+ 	 max-width: 100%;
+  	 height: auto;
+  	 background-color: transparent;
+  	 border: none;
+}
+
+.icon-images{
+ 	 
+ 	 width: 350px;
+   	 background-color: transparent;
+  	 border: none;
+}
+
+
+hr {
+	color: white;
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar1 .navbar-nav1 .nav-item1 .nav-link1 {
+    padding: 0 0.5em;
+  }
+  .navbar1 .navbar-nav1 .nav-item:not(:last-child) .nav-link1 {
+    border-right: 2px solid #FFFFFF;
+  }
+}
