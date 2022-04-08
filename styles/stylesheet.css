@@ -76,3 +76,8 @@ hr {
     border-right: 2px solid #FFFFFF;
   }
 }
+
+.remove-underline {
+			text-decoration: none;
+
+}
