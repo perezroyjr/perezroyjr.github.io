@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="icon" href="../assets/icon.png">
+        <title>Roy Perez</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../styles/bootstrap.min.css">
+        <link rel="stylesheet" href="../styles/bootstrap-icons.css">
+
+        <!--Custom CSS-->
+        <link rel="stylesheet" href="../styles/stylesheet.css">
+    </head>
+    <body class="background-color">
+
+        <div class='container mb-5'>
+            <h1 class='display-1 mt-4 text-light'> Final Project Specs </h1>
+            <hr>
+            <p>
+                <article class="text-light lead">
+                    <h6>User Stories:</h6>
+                    <p>
+                        Initially for my website I would like the landing page to just be able to display the main objective of the site. The site will be a LeetCode question scraper placed with a drawable canvas. The goal is to create a whiteboard interview simulation. I’d also like to scrape YouTube and return the top 3 videos for that question and display them underneath as a reference in case the user gets stuck or is just curious of different approaches / implementations. I haven’t really thought too far ahead as user’s and such go, because I believe learning how to do the scraping will take a bit of time in of itself. So, for now the initial user story will be the landing page of getting to draw the problem on a whiteboard. If there is time available, I will try to make more additions. 
+                    </p>
+                    <h6>Frontend Features:</h6>
+                    <p>
+                        The browser will be responsible for displaying the LeetCode question to the user. It will also handle the canvas and allow for drawing and erasing simulating a white board. Another feature I would like to implement is displaying YouTube solutions to the problem that is scraped from LeetCode. My initial draft for the page is to have it look something like this (minus the bad handwriting). later.    
+                    </p>
+                    <h6>Backend Features:</h6>
+                    <p>
+                       This will be the interesting part of my website since I’ve never done web scraping before. I’ve been reading on different ways of doing it, and it seems like Python’s beautiful soup is a good starting place. So, my goal would be to scrape these leetcode questions then display them inside of a container in my html page. The other part main part of the project would be coming up with re-drawable white board that will have an eraser and a pencil / marker. Also, I will need to make sure the canvas can somehow manage to fit all the text required to be written on it. I think these two will be my biggest tasks.  
+                    </p>
+                    <h6>Database Features:</h6>                    
+                    <p>
+                       To be honest I haven’t really thought of a good way to implement a database into this site yet, as my knowledge of web-based storage is limited. I’m sure as we get closer to those lectures, I will be able to come up with a way to implement a database for the site. One thought is having a user log in and store their canvas state and be able to restore it when they log back in. However, I am also realistic and realize we only have a month left before the semester ends, and I’m learning a lot of this stuff right now. I do plan on updating once the semester ends though, to continue learning and expanding my web expertise. So, I’m not totally sure how far I’ll make it into this implementation. However, I do think working on this project alone will allow me to learn as much as possible.   
+                    </p>
+                </article>
+            </p>
+        </div>
+       
+       <div class='text-center'>
+            <iframe width="750" height="450" src="https://www.youtube.com/embed/ng2o98k983k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       </div>   
+
+        <!--  Bootstrap Bundle with Popper -->
+        <script src="../scripts/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>
