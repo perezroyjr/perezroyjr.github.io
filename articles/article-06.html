@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <link rel="icon" href="../assets/icon.png">
+        <title>Roy Perez</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../styles/bootstrap.min.css">
+        <link rel="stylesheet" href="../styles/bootstrap-icons.css">
+
+        <!--Custom CSS-->
+        <link rel="stylesheet" href="../styles/stylesheet.css">
+    </head>
+    <body class="background-color">
+
+        <div class='container mb-5'>
+            <h1 class='display-1 mt-4 text-light'> Coding Contest Tracker </h1>
+            <hr>
+            <p>
+                <article class="text-light lead">
+                    <h6>The Process:</h6>
+                    <p>
+                       For my homework 4 of my web dev class I was given the assignment of understanding how a REST API works. Initially I didn't really know where to start, or what to build. After browsing through all of the free available api's I tried to find which one would be of the most use to me or people I know. Most people I currently know are into coding, so I browsed down to the available free coding apis. The one that stood out the most to me was an api that allows you to receive data based on the upcoming coding contest. There was an option to receive data from specific sites such as leetcode, hackerrank, codeforces, or you could receive them all. 
+                    </p>
+                    <p>
+                       Once I saw that, I thought why not make something that my peers and I could use to track contests in order to get some interview prep. The initial process was understanding how the http get method works. I was able to grasp a better understanding by crossreferencing my professors and traversy media's youtube videos. JavaScript has a really cool method that allows you to grab data from an API endpoint called fetch. To send this request however you need to create an http function that contains the ability to setup a configuration file that tells the api endpoint what method you're using. In my case I needed to send a get method in order to make a request from their server to retrieve the data. JavaScript also has some cool methods called await and async that allows for the program to continue operating while it's waiting for data retrieval.  
+                   </p>
+                     <p>
+                       Once I used the http get method to retrieve the json data I stored it into a variable called json. From there I had to figure out a way to extract the data that was retreived from the endpoint. The endpoint gave me data such as the site, the date, and the title of the contest. Now it was my responsibility to take this data and do something useful with it. I learned in one of Brad Traversy's videos how to loop through the data using a forEach loop. From there I was able to loop through each contest invidiually.
+                   </p>
+                    <p>
+                       Now I had to figure out a way to get that data to display to my webpage in a dynamic way, so that it could constantly update itself along with changes to the api whenever a new contest is added. This part was a bit tricky. My first thought was to display them as list elements, and assign an id to a ul element in my webpage so I could use innerHTML to dynamically change it. This was definitely the approach I was looking for, however I ran into the problem of all of the new list elements being displayed on the same row. This led to a really long horizontal webpage.. So now I had to come up with a way of grouping these list elements. 
+                   </p>
+                    <p>
+                       After some thought I came up with the idea of creating a new div of ul elements. Each ul contained three list elements containing the site name, the contest date, and a link to sign up. However I needed to do this dynamically. So I created an iteration variable that keeps track of how many times its passed through the forEach loop so far.So on the initial pass at i = 0 i create the first div and ul group and append the html code to a global UIupdater variable. If i > 0 && i < 4 I just append normal ul's for each contest without the div. Once the iteration value hits 4 I append the closing div tag along with an hr tag to group the elements that will display on that line then reset the iterator to 0 to create a new div for the next group. 
+                   </p>
+                    <p>
+                       The last issue I ran into while creating the site was that the API was still sending coding contest that had already passed. In order to filter this out I created a date object outside of the for loop that grabs the current date and time. Inside of the for loop I created another data object that grabbed the current contest's date and passed in that contests start time create the most accurate Date object. I then filtered on these elements by comparing dates along with my iterator variable inside of the if statements. If the ContestDate > the currentDate && i == 0 append the list, or if the ContestDate > currentDate && i < 4 append the list. This was able to keep my site up to date without me ever having to touch it again as long as the api logic remains the same. All in all I was able to learn a lot from this assignment on JavaScripts Rest API capabilities. 
+                   </p>
+                   <div class="text-center">
+                        <a class="text-danger" href="https://perezroyjr.github.io/Code-Contests/">Code Contest's Site</a>
+                   </div>
+                   <hr>
+                   <div class="text-center">
+                        <a class="text-light" href="https://kontests.net/api/">API USED</a>
+                   </div>    
+                </article>
+            </p>
+        </div>
+       
+       <div class='text-center'>
+            <img src="../assets/Capture.jpg" width="750" height="500">
+       </div>   
+
+       <hr>
+        <!--  Bootstrap Bundle with Popper -->
+        <script src="../scripts/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>
