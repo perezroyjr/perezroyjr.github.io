@@ -67,6 +67,15 @@
 hr {
 	color: white;
 }
+@media (max: 575.98px) {
+.wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center !important;
+	}	
+
+}
+
 
 @media only screen and (min-width: 992px) {
   .navbar1 .navbar-nav1 .nav-item1 .nav-link1 {
@@ -76,6 +85,8 @@ hr {
     border-right: 2px solid #FFFFFF;
   }
 }
+
+
 
 .remove-underline {
 			text-decoration: none;
